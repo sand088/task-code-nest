@@ -1,5 +1,6 @@
 body {
   background-image: url("../img/bg-page.png");
+  font-size: 16px;
 }
 
 .cliarfix {
@@ -15,25 +16,25 @@ body {
 .logo {
   float: left;
   margin-left: 4%;
-  margin-right: 12%;
+  margin-right: 14%;
 }
 
 header {
   margin-top: 17px;
   line-height: 2.5;
   height: 90px;
+  width: 100%;
 }
 
 nav {
   float: left;
-  margin-right: 7.27%;
 }
 nav ul li {
   float: left;
   list-style: none;
 }
 nav ul li a {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
   color: #5C5B5B;
   text-transform: capitalize;
@@ -47,11 +48,12 @@ nav ul li:after {
 }
 
 .join {
-  float: left;
+  float: right;
   margin-top: 15px;
 }
+
 .join a {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-transform: capitalize;
   color: #f1f5f7;
   text-decoration: none;
@@ -64,10 +66,103 @@ nav ul li:after {
   color: #fff;
 }
 
+#burgerMenu .fa-bars {
+  float: left;
+  font-size: 2rem;
+  color: #5C5B5B;
+  display: none;
+}
+
 .contentHolder {
   background-color: #fff;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   height: 2000px;
+}
+
+@media only screen and (max-width: 1499px) {
+  .logo {
+    margin-right: 5%;
+  }
+}
+@media only screen and (max-width: 1352px) {
+  .logo {
+    margin-right: 2%;
+  }
+}
+@media only screen and (max-width: 1315px) {
+  .logo {
+    float: none;
+  }
+
+  .centralPosition nav {
+    float: none;
+    text-align: center;
+  }
+
+  header {
+    height: 150px;
+    text-align: center;
+  }
+
+  .join {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .centralPosition {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 691px) {
+  .mainNav {
+    display: none;
+  }
+
+  nav ul li {
+    float: none;
+  }
+
+  #burgerMenu .fa-bars {
+    display: block;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  header {
+    height: 70px;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+
+  .join {
+    margin-top: 15px;
+  }
+  .join a {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 405px) {
+  .logo {
+    display: block;
+  }
+
+  header {
+    height: 120px;
+    margin-top: 0;
+  }
+
+  #burgerMenu .fa-bars {
+    margin-top: 5px;
+  }
+
+  .join {
+    margin-top: 0;
+    position: absolute;
+    right: 8px;
+    top: 75px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
