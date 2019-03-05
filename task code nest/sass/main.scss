@@ -1,9 +1,17 @@
 $boxShadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);    
+$fontMuli: 'Muli', sans-serif;
+$fontRochester: 'Rochester', cursive;
+$mainTextColor: #6B6969;
+$butonColor: #c34b1f;
+$hrColor: #2475ad;
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-image: url("../img/bg-page.png");
-    font-size: 16px;
+    font-size: 1rem;
 }
 .cliarfix{
     clear: both;
@@ -13,10 +21,98 @@ body{
     margin: 0 auto;
     max-width: 1100px;
 }
+// header
+.colorsLine {
+    position: absolute;
+    top: -16px;
+    left: 0;
+    right: 0;
+    span{
+        display: inline-block;
+        height: 2px;
+        padding: 0;
+        margin: 0;
+    }
+    .stColor{
+        width: 7.75%;
+        background-color: #557977;
+
+    }
+    .ndColor{
+        width: 4.5%;
+        background-color: #1cbbb4;
+        margin-left: -5px;
+    }
+    .rdColor{
+        width: 10.93%;
+        background-color: #c8d31d;
+        margin-left: -5px;
+    }
+    .thColor{
+        width: 4.06%;
+        background-color: #1cbbb4;
+        margin-left: -5px;
+    }
+    .fifthColor{
+        width: 7.5%;
+        background-color: #c8d31d;
+        margin-left: -5px;
+    }
+    .sixthColor{
+        width: 9.25%;
+        background-color: #ff8d00;
+        margin-left: -5px;
+    }
+    .seventhColor{
+        width: 7.5%;
+        background-color: #a1ae08;
+        margin-left: -5px;
+    }
+    .eighthColor{
+        width: 4.56%;
+        background-color: #ffad2c;
+        margin-left: -5px;
+    }
+    .ninthColor{
+        width: 5.62%;
+        background-color: #1cbbb4;
+        margin-left: -5px;
+    }
+    .tenthColor{
+        width: 6.87%;
+        background-color: #ff8d00;
+        margin-left: -5px;
+    }
+    .eleventhColor{
+        width: 9.56%;
+        background-color: #a1ae08;
+        margin-left: -5px;
+    }
+    .twelfthColor{
+        width: 3.62%;
+        background-color: #ffad2c;
+        margin-left: -5px;
+    }
+    .thirtiethColor{
+        width: 6.87%;
+        background-color: #557977;
+        margin-left: -5px;
+    }
+    .fourteenthColor{
+        width: 9.37%;
+        background-color: #1cbbb4;
+        margin-left: -5px;
+    }
+    .fifteenthColor{
+        width: 2.49%;
+        background-color: #ffad2c;
+        margin-left: -5px;
+    }
+}
 .logo{
     float: left;
     margin-left: 4%;
-    margin-right: 14%;
+    margin-right: 10%;
 
 }
 header{
@@ -27,10 +123,12 @@ header{
 }
 nav{
     float: left;
+    margin-top: 15px;
     ul li{
         float: left;
         list-style: none;
         a{
+            font-family: $fontMuli;
             font-size: 1.125rem;
             text-decoration: none;
             color: #5C5B5B;
@@ -70,22 +168,548 @@ nav{
     display: none;
 }
 .contentHolder{
+    position: relative;
     background-color: #fff;
     box-shadow: $boxShadow;
-    height: 2000px;
+    margin-bottom: 43px;
+}
+// social network icons
+.socialNetwork{
+    float: right;
+    margin-right: 4.54%;
+    padding: 12px 0;
+    a img{
+        padding: 0 3px;
+    }
 }
 
+// Slider
 
+.slider{
+    position: relative;
+    width: 91%;
+    // min-height: 150px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+}
+    .sliderCard{
+        background-color: transparent;
+        background-image: url("../img/Rectangle\ 6.png");
+        background-position: center;
+        background-size: cover;
+        z-index: 9;
+        border: 0;
+        position: absolute;
+        left: 2%;
+        bottom: 5%;
+        height: 170px;
+        .card-body{
+        padding: 0;
+        text-align: left;
+         h2{
+            font-family: $fontMuli;
+            font-size: 2rem;
+            color: #fff;
+            margin: 0;
+            padding: 10px 0 0 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 5%;
+        }
+        p{
+            font-family: $fontMuli;
+            font-size: 0.875rem;
+            color: #fff;
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 17px;
+            word-spacing: -2px;
+            padding: 0;
+            margin: 0;
+            padding-left: 12px;
+            margin-bottom: 10px;
+            height: 50px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        a{
+            font-family: $fontMuli;
+            font-size: 0.875rem;
+            color: #fff;
+            text-transform: capitalize;
+            background-color: transparent;
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+        .dash{
+            padding-left: 12px;
+            width: 88.22%; 
+            position: absolute;
+            left: 4%;
+            top: 35%;
+        }
+        .plus{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            
+        }
+    }
+}
+    .bannerInd{
+        position: absolute;
+        top: 40px;
+        right: -15px;
+        z-index: 10;
+    }
+    .underBanner{
+        position: absolute;
+        top: 110px;
+        right: -10px;
+    }
+    .sliderIndicators .dotPosition{
+        position: absolute;
+        top: 110px;
+        right: 100px;
+    }
+    .sliderIndicators .bannerButons{
+        width: 70px;
+        height: 25px;
+        margin: 0;
+        z-index: 11;
+        li{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: 1;
+            margin-right: 6px;
+            
+        }
+        .active{
+            background-color: #2475AD;
+        }
+    }
+ .sliderIndicators h2{
+     font-family: $fontRochester;
+     font-size: 1.5rem;
+     color: #fff;
+     position: absolute;
+     top: 60px;
+     right: 10px;
+     z-index: 11;
+ }
+// card section
+.cardSection{
+    margin: 0  50px 50px;
+    .row{   
+         .card{
+            padding: 5px;
+            margin: 0;
+         }
+    }
+}
+.card{
+    border-radius: 0;
+    padding-left: 0;
+}
+.card::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 95.2%;
+    background-color: #f7f7f6;
+    border: 1px solid #eaeae8;
+    position: absolute;
+    bottom: -4px;
+    left: 4px;
+}
+.card{
+    h3{
+        font-family: $fontMuli;
+        font-size: 1.5rem;
+        color: $mainTextColor;
+        margin-left: 11px;
+        margin-top: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .cardHr{
+        // width: 290px;
+        height: 2px;
+        background-color: $hrColor;
+        margin: 0 auto 24px;
+        padding: 0;
+    }
+    img{
+        // width: 290px;
+        height: 110px;
+        margin: 0 auto;
+    }
+}
+.firstCard .card-body p{
+    text-align: right;
+    height: 70px;
+    overflow: hidden;
+    line-height: 18px;
 
+} 
+.card-body{
+    text-align: right;
+    padding: 12px;
+    
+     p{
+        text-align: left;
+        height: 70px;
+        overflow: hidden;
+        line-height: 18px;
+        font-size: 0.81rem;
+    }
+    a{
+        display: inline-block;
+        width: 75px;
+        height: 25px;
+        text-align: center;
+        background-color: $butonColor;
+        color: #fff;
+    }
+}
+.sliderBackground{
+    padding: 10px 0;
+    margin: 0 50px 50px;
+    background-image: url("../img/Rectangle\ 20.png");
+}
+.sliderHeader{
+    h2{
+        float: left;
+        margin-left: 25px;
+        color: $mainTextColor;
+        font-family: $fontMuli;
+        font-size: 1.5rem;
+    }
+    a{
+        position: relative;
+        float: right;
+        background-color: #98a408;
+        width: 206px;
+        height: 27px;
+        margin-right: 25px;
+        font-family: $fontMuli;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+    }
+    a:after{
+        content: ('');
+        display: inline-block;
+        border: 6px solid transparent;
+        border-left-color: #fff;
+        position: absolute;
+        top: 7px;
+        right: 3px;
+
+    }
+}
+.sliderHr{
+    width: 94.90%;
+    height: 2px;
+    background-color: $hrColor;
+    margin: 0 auto 18px;
+}
+.itemSlider{
+    padding: 0 15px;
+}
+.cardProfile{
+    position: relative;
+    float: left;
+    img{
+        float: left;
+    }
+    .pullRight{
+        float: left;
+        h3{
+            font-size: 1.125rem;
+            font-family: $fontMuli;
+            color: #a20e0c;
+            margin: 0;
+            
+        }
+        p{
+            font-size: 0.81rem;
+            color: #000;
+            padding: 0;
+            margin: 0;
+            line-height: 15px;
+        }
+        a{
+            font-size: 0.81rem;
+            color: #000;
+        }
+        a:after{
+            position: absolute;
+            bottom: 10px;
+            right: 30%;
+            content: ('');
+            display: inline-block;
+            border: 6px solid transparent;
+            border-left-color: $butonColor;
+        }
+    }
+}
+.controls-top{
+    button{
+        color: $butonColor;
+        font-size: 2.25rem;
+    }
+    .btnPrev{
+        position: absolute;
+        top: 0;
+        left: -90px;
+    }
+    .btnNext{
+        position: absolute;
+        top: 0;
+        right:-90px;
+    }
+    .btnPrev:hover{
+        color: $butonColor;
+    }
+    .btnPrev:focus{
+        color: $butonColor;
+    }
+    .btnNext:hover{
+        color: $butonColor;
+    }
+    .btnNext:focus{
+        color: $butonColor;
+    }
+}
+
+.companyActivity{
+    height: 100%;
+    padding: 0 50px 70px;
+    position: relative;
+    .topBorder{
+        position: absolute;
+        top: 17%;
+        left: 6%;
+        width: 88%;
+        height: 15px;
+        margin: 0 auto;
+        background-image: url("../img/horizontalDash.png");
+        background-repeat: repeat-x;
+    }
+    .topBorder::before{
+        position: absolute;
+        top: 50%;
+        left: -1%;
+        content: ('');
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $hrColor;
+    }
+    .topBorder::after{
+        position: absolute;
+        top: 50%;
+        right: -1%;
+        content: ('');
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $hrColor;
+    }
+    .bottomBorder{
+        position: absolute;
+        bottom: 13%;
+        left: 6%;
+        width: 88%;
+        height: 15px;
+        margin: 0 auto;
+        background-image: url("../img/horizontalDash.png");
+        background-repeat: repeat-x;
+    }
+    .bottomBorder::before{
+        position: absolute;
+        top: 50%;
+        left: -1%;
+        content: ('');
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $hrColor;
+    }
+    .bottomBorder::after{
+        position: absolute;
+        top: 50%;
+        right: -1%;
+        content: ('');
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $hrColor;
+    }
+    .leftBorder{
+        position: absolute;
+        top: 6%;
+        left: 34%;
+        width: 15px;
+        height: 250px;
+        background-image: url("../img/verticalDash.png");
+        background-repeat: repeat-y;
+    }
+    .leftBorder::before{
+        position: absolute;
+        top: -4%;
+        left: 30%;
+        content: ('');
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $hrColor;
+    }
+    .leftBorder::after{
+        position: absolute;
+        bottom: -4%;
+        left: 30%;
+        content: ('');
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $hrColor;
+    }
+    .rightBorder{
+        position: absolute;
+        top: 6%;
+        right: 34%;
+        width: 15px;
+        height: 250px;
+        background-image: url("../img/verticalDash.png");
+        background-repeat: repeat-y;
+    }
+    .rightBorder::before{
+        position: absolute;
+        top: -4%;
+        left: 30%;
+        content: ('');
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $hrColor;
+    }
+    .rightBorder::after{
+        position: absolute;
+        bottom: -4%;
+        left: 30%;
+        content: ('');
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $hrColor;
+    }
+    div{
+        h2{
+            font-family: $fontRochester;
+            font-size: 2.5rem;
+            color: $butonColor;
+            margin-left: 25px;
+            margin-bottom: 30px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .bodyCard{
+            height: 150px;
+            color: $mainTextColor;
+        }
+        .bodyCard img{
+            float: left;
+            margin-right: 13px;
+        }
+        .bodyCard h3{
+            font-family: $fontMuli;
+            font-size: 1.125rem;
+        } 
+        p{
+            font-family: $fontMuli;
+            font-size: 0.813rem;
+            overflow: hidden;
+            height: 92px;
+            margin-bottom: 8px;
+            text-overflow: ellipsis;
+        }
+        a{
+            color: #2475ad;
+            font-family: $fontMuli;
+            font-size: 0.813rem;
+        }
+        
+    }
+}
+.contentHolderBottom{
+    position: absolute;
+    bottom: -0.8%;
+    left: 0.9%;
+    width: 98.18%;
+    height: 12px;
+    border: 2px solid #eaeae8;
+    border-top: 0;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3); 
+    opacity: .8;
+    margin: 0 auto;
+}
+.secondEfect{
+    position: absolute;
+    bottom: -10px;
+    left: 0.9%;
+    width: 98.18%;
+    height: 8px;
+    border: 2px solid #eaeae8;
+    border-top: 0;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3); 
+    opacity: .8;
+    margin: 0 auto;
+}
+// footer
+footer .leftFooter{
+    float: left;
+    margin: 35px 50px;
+}
+footer .rightFooter{
+    float: right;
+    margin: 35px 50px;
+}
+footer span p{
+    margin: 0;
+    font-family: $fontMuli;
+    font-size: 0.813rem;
+    color: #2B2929;
+}
 
 @media only screen and (max-width: 1499px){
     .logo{
         margin-right: 5%;
     }
+    .cardProfile .pullRight a:after{
+        right: 20%;
+    }
 }
 @media only screen and (max-width: 1352px){
     .logo{
         margin-right: 2%;
+    }
+    .cardProfile .pullRight a:after{
+        right: 15%;
     }
 }
 @media only screen and (max-width: 1315px){
@@ -103,18 +727,69 @@ nav{
     .join{
         margin-top: 0;
     }
+    .bodyCard img{
+        height: 80px;
+    }
 }
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 1200px){
+    .centralPosition{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 900px){
     .centralPosition{
         width: 95%;
     }
+    .controls-top .btnPrev {
+        position: absolute;
+        top: 0;
+        left: -5%;
 }
-@media only screen and (max-width: 691px){
+    .controls-top .btnNext {
+    position: absolute;
+    top: 0;
+    right: -5%;
+}
+.sliderCard{
+    height: 150px;
+}
+.sliderCard .card-body a{
+    margin-top: 0;
+}
+.cardProfile .pullRight a:after{
+    right: 30%;
+}
+}
+@media only screen and (max-width: 768px){
+    .topBorder, .bottomBorder, .leftBorder, .rightBorder{
+        display: none;
+    }
+    .contentHolderBottom{
+        bottom: -0.7%;
+    }
+    footer{
+        text-align: center;
+        .leftFooter{
+           float: none;
+        }
+        .rightFooter{
+            float: none;
+        }
+    }
+}
+@media only screen and (max-width: 730px){
     .mainNav{
         display: none;
+        margin-top: 20px;
+    }
+    .mainNav ul{
+        position: relative;
+        z-index: 11;
+        
     }
     nav ul li{
         float: none;
+        background-color: #fff;
     }
     #burgerMenu .fa-bars{
         display: block;
@@ -126,29 +801,54 @@ nav{
     }
     .logo{
         display: inline-block;
+        margin: 0;
     }
     .join {
-        margin-top: 15px;
+        position: absolute;
+        right: 3%;
+        top: 4%;
         a{
         margin: 0;
         }
     }
+    .cardSection .row .col-sm-4{
+        padding: 0 0 0 2px;
+    }
 }
-@media only screen and (max-width: 405px){
+@media only screen and (max-width: 577px){
+    .cardSection .row .col-sm-4 .card{
+        margin: 10px auto;
+    }
+    .contentHolderBottom{
+        bottom: -0.5%;
+    }
+    .sliderCard{
+        position: relative;
+        left: 0;
+        bottom: 0;
+        height: 170px;
+    }
+}
+@media only screen and (max-width: 500px){
     .logo{
         display: block;
+    }
+    .mainNav{
+        margin-top: 60px;
     }
     header{
         height: 120px;
         margin-top: 0;
     }
-    #burgerMenu .fa-bars{
-        margin-top: 5px;
-    }
     .join {
-        margin-top: 0;
         position: absolute;
-        right: 8px;
-        top: 75px;
+        right: 3%;
+        top: 13%;
+    }
+    .controls-top .btnPrev{
+        left: -10%;
+    }
+    .controls-top .btnNext{
+        right: -10%;
     }
 }
