@@ -695,13 +695,14 @@ footer span p {
   color: #2B2929;
 }
 
+@media only screen and (max-width: 1520px) {
+  .cardProfile .pullRight a:after {
+    right: 20%;
+  }
+}
 @media only screen and (max-width: 1499px) {
   .logo {
     margin-right: 5%;
-  }
-
-  .cardProfile .pullRight a:after {
-    right: 20%;
   }
 }
 @media only screen and (max-width: 1352px) {
@@ -807,7 +808,7 @@ footer span p {
 
   #burgerMenu .fa-bars {
     display: block;
-    margin-left: 30px;
+    margin-left: 15px;
     margin-top: 20px;
   }
 
@@ -823,7 +824,7 @@ footer span p {
   .join {
     position: absolute;
     right: 3%;
-    top: 4%;
+    top: 5%;
   }
   .join a {
     margin: 0;
@@ -875,6 +876,10 @@ footer span p {
 
   .controls-top .btnNext {
     right: -10%;
+  }
+
+  .cardProfile .pullRight a:after {
+    bottom: 3%;
   }
 }
 
